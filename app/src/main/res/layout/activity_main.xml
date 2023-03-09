@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        tools:ignore="MissingClass">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="353dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="134dp"
+            android:text="Cancel"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnSubmit" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="143dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginEnd="144dp"
+            android:text="Register"
+            android:textAlignment="center"
+            android:textColor="#322E2E"
+            android:textSize="48sp"
+            app:layout_constraintBottom_toTopOf="@+id/edtName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="354dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="29dp"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/edtEmail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="354dp"
+            android:layout_height="71dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="10dp"
+            android:text="Submit"
+            app:layout_constraintBottom_toTopOf="@+id/btnCancel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtRePassword" />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="353dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="29dp"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toTopOf="@+id/edtRePassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtPhone" />
+
+        <EditText
+            android:id="@+id/edtRePassword"
+            android:layout_width="353dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="29dp"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:hint="Re-Password"
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toTopOf="@+id/btnSubmit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="355dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="27dp"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            app:layout_constraintBottom_toTopOf="@+id/edtPhone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtName" />
+
+        <EditText
+            android:id="@+id/edtPhone"
+            android:layout_width="355dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="27dp"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:hint="Phone"
+            android:inputType="phone"
+            app:layout_constraintBottom_toTopOf="@+id/edtPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
